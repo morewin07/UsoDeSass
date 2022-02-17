@@ -1,0 +1,9 @@
+@mixin mySuperBorder {
+    border:3px dashed black;
+}
+
+@mixin respond-to($width){
+    @media only screen and (min-width:$width){
+        @content;
+    }
+}

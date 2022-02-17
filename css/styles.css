@@ -1,0 +1,103 @@
+/*---------------------------*\
+$COLORS
+\*---------------------------*\
+
+/**
+*Branding colors
+*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.alerts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  background-color: #0070f3;
+  border: 2px solid black;
+  padding: 12px;
+}
+@media only screen and (min-width: 800px) {
+  header {
+    background-color: #112d42;
+  }
+}
+
+.content {
+  background-color: #112d42;
+  padding: 10px;
+  margin: 1rem 2rem;
+}
+
+.content > p {
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.alerts-container {
+  padding: 10px;
+  border: 3px dashed black;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+.alerts-container > div {
+  padding: 10px;
+  margin: 4px 10px;
+}
+
+.btn-info, .btn-sucess, .btn-alert {
+  font-weight: bolder;
+  border-radius: 1.2rem;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-alert {
+  background-color: #c32323;
+  color: #bfbfbf;
+  font-size: 1.5rem;
+}
+
+.btn-sucess {
+  background-color: #008f47;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn-info {
+  background-color: #3cb8dd;
+  color: black;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: 1px solid red;
+}
+nav li {
+  padding: 5px;
+}

@@ -1,0 +1,15 @@
+
+nav {
+    ul{
+        list-style: none;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:10px;
+        border:1px solid red;
+    }
+    li{
+        padding:5px;
+    }
+    
+}

@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+%unusual-features-flex
+{
+    display:flex;
+    flex-direction: column;
+}
+
+%usual-feature-flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    background-color: $color-brand;
+    border:2px solid black;
+    padding:12px;
+    @include respond-to(800px){
+        background-color: $color-secondary;
+    }
+}
+.content
+{
+    background-color: $color-secondary;
+    padding:$basicPadding;
+    margin:1rem 2rem;
+}
+
+.content > p{
+    color:white;
+    font-weight: bolder;
+    font-size:2rem;
+}
+
+.alerts-container
+{
+@extend %unusual-features-flex;
+padding:$basicPadding;
+
+@include mySuperBorder;
+}
+
+h6{
+    font-size: $baseFontSize;
+}
+
+.alerts-container > div{
+    padding:$basicPadding;
+    margin:4px 10px;
+}
+
